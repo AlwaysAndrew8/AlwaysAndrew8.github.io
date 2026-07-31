@@ -210,12 +210,15 @@ footer {
     border: 1px solid var(--border-color);
     text-align: left;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    min-height: 85px; /* Reserves space for two lines */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start; /* Keeps the text anchored to the top */
+    white-space: nowrap; /* Forces text to stay on one line */
+    overflow-x: auto; /* Allows horizontal scrolling if it gets too long */
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
 }
 
+/* Hides the scrollbar in Chrome/Safari/Edge for a cleaner look */
+.terminal-container::-webkit-scrollbar {
+    display: none;
+}
 .prompt {
     color: #10b981; /* Standard terminal green */
     margin-right: 8px;
