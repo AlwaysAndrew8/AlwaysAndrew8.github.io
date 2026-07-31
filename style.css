@@ -217,10 +217,11 @@ footer {
     word-break: break-word; /* Ensures it breaks smoothly at the end of the line */
 }
 
-/* Hides the scrollbar in Chrome/Safari/Edge for a cleaner look */
+/* Hides the scrollbar in Chrome/Safari/Edge for a cleaner look
 .terminal-container::-webkit-scrollbar {
     display: none;
-}
+}*/
+
 .prompt {
     color: #10b981; /* Standard terminal green */
     margin-right: 8px;
