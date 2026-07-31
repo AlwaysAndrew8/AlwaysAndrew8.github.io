@@ -183,3 +183,41 @@ footer {
     border-top: 1px solid var(--border-color);
     font-size: 0.85rem;
 }
+/* Terminal Typing Effect */
+.terminal-container {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    background: #020617; /* Deep black for the terminal background */
+    max-width: 550px;
+    margin: 0 auto 30px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.prompt {
+    color: #10b981; /* Standard terminal green */
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+#typewriter {
+    color: var(--text-main);
+}
+
+/* The blinking cursor block */
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: var(--accent);
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
